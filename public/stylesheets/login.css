@@ -1,0 +1,89 @@
+*{margin: 0;padding: 0;}
+
+
+.box{position: relative;width: 100%;height: 100%;}
+.bigimg{width: 1280px;height: 120px;position: absolute;}
+
+.bigimg>img{width: 1280px;height: 700px;position: absolute;}
+
+
+#smallimg{position: absolute;width: 156px;height: 40px;margin-left: 50px;margin-top: 40px;background:;}
+#smallimg>img{width: 156px;height: 40px;position: absolute;}
+
+#middleimg{position: absolute;width:300px ;height: 120px;background: ;margin-top: 76px;margin-left: 490px;}
+#middleimg>img{position: absolute;width: 300px;height: 120px;}
+
+
+    .login-body{	
+			width: 440px;
+			height: 400px;
+			position: absolute;
+			background: #e6e6e6;
+			margin-left: 418px;
+			margin-top: 196px;
+        }
+
+#user{position: absolute;width: 320px;height: 52px;background: olive;margin-top: 53px;margin-left: 73px;}
+
+#username{position: absolute;
+			width: 220px;
+			height: 52px;
+			border: none;
+			font-size: 12px;
+			line-height: 50px;
+			padding-left: 20px;
+			}
+			
+#s1{position: absolute;width:80px ;height: 52px;background: white;right: 0;top: 0;}
+
+.psw{position: absolute;width: 320px;height: 52px;margin-left: 73px;margin-top: 114px;background:olive;}
+
+#psw{position: absolute;width: 240px;height: 52px;border: none;font-size: 12px;line-height: 50px;padding-left: 20px;}
+#s2{position: absolute;width: 60px;height: 52px;background: white;right: 0;top: 0;}
+
+
+
+
+
+.left{position: absolute;width: 320px;height: 52px;background: olive;margin-top: 175px;margin-left: 73px;}
+
+#left{width: 200px;height: 52px;border: none;font-size: 12px;padding-left: 20px;line-height:50px ;}
+
+#right{position: absolute;width: 100px;height: 52px;right: 0;top: 0;background: white;}
+
+#text{width: 80px;height: 42px;background: orange;border: none;margin-top: 5px;margin-left: 10px;font-size: 13px;text-align: center;}
+
+
+
+#btn{position: absolute;width: 320px;height: 52px;background: #fc7878;border: none;margin-top: 240px;margin-left: 73px;font-size: 16px;color: white;}
+
+#end{position: absolute;width: 320px;height: 40px;line-height: 40px;margin-left: 73px;bottom: 60px;background:;}
+
+#end>a{font-size: 12px;color:black;}
+#end>span{font-size: 12px;color: blueviolet;margin-left: 40px;}
+
+#end>p{font-size: 12px;color: blueviolet;right: 0;position: absolute;top: 0;}
+
+
+#lastimg{position: absolute;width: 476px;height: 50px;bottom: 0;left: -16px;}
+#lastimg>img{position: absolute;width: 473px;height: 50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

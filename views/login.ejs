@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	
+		<link href="/stylesheets/login.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+
+<div id="box" class="box">
+	<div class="bigimg" id="bigimg">
+		
+		<img src="images/ecshop-bg.png" />
+		
+	</div>
+	
+	
+	<div id="smallimg">
+		<img src="images/shopex.png">
+	</div>
+	
+	<div id="middleimg">
+		<img src="images/ecshop-logo.png">
+	</div>
+	
+	
+<form class="login-body" >
+	
+	
+	<div class="user" id="user">
+		
+		<input type="text" id="username" placeholder="用户名"/></br>
+	
+	    <span id="s1"></span>
+		
+	</div>
+	
+	
+	<div class="psw">
+		<input type="password" id="psw" placeholder="密码"/></br>
+	    <span id="s2"></span>
+		
+	</div>
+	
+	
+	
+	<div class="left">
+		<input type="text" id="left" placeholder="验证码"/>
+		
+		<div id="right">
+			<input type="text"  id="text" value="5455"/>
+		</div>
+	</div>
+	
+	
+	
+	
+	<input type="submit" id="btn" onclick="login()"  value="登录"/>
+	
+	
+	
+	<div id="end">
+		
+		<input type="checkbox" id="check"  />
+		<a>保存登录信息</a>
+		<span>忘记密码？</span>
+		<p>去店铺首页>></p>
+		
+	</div>
+	
+	
+	
+	<div id="lastimg">
+		
+		<img src="images/images/canvas2_03.png">
+		
+	</div>
+</form>
+
+</div>
+
+	</body>
+</html>
+	<script src="javascripts/login.js"></script>
+<script src="javascripts/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+	function login() {
+		$.ajax({
+			url: "/api/login4ajax",
+			type: "post",
+			data: {
+				username: $("#username").val(),
+				psw: $("#psw").val()
+			},
+			success: function(res) {
+				console.log(res);
+				if(res.code == 1) {
+					alert(res.message);
+//					 location.href = "/dashboard?r=" + new Date().getTime();
+					  location.href = "/main.ejs"
+					
+				} else {
+					alert(res.message);
+				}
+			}
+		})
+	}
+	
+	
+	
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
